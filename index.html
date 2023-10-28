@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/30a542c1ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
+    <title>Inmersión dev</title>
+  </head>
+  <body>
+    <main class="container_gob">
+      <header class="container_header">
+        <img
+          src="./src/img/logo_dev.png"
+          alt="logo inmersion"
+          class="logos_dev"
+        />
+        <img
+          src="./src/img/alura-latam-logo.1686744883.png"
+          alt="logo alura"
+          class="logos_dev alura"
+        />
+      </header>
+      <section class="container_desafios">
+        <div class="container_initial">
+          <h1 class="title_initial">DESAFÍOS</h1>
+          <button class="btn_initial">comenzar</button>
+        </div>
+        <div class="container_dev">
+          <div class="desafios coins">
+            <form class="coin_container">
+              <h2 class="title_coin">Convertidor de Mondas</h2>
+              <div class="cantidad">
+                <input class="count" required placeholder=" " type="text" />
+                <label class="label_count">Cantidad</label>
+              </div>
+              <div class="seleccion">
+                <label>de:</label>
+                <select required class="currency">
+                  <option value="PE">PERU</option>
+                  <option value="USD">EE.UU</option>
+                  <option value="MXN">MEXICO</option>
+                </select>
+              </div>
+              <div class="seleccion">
+                <label>a:</label>
+                <select required class="change">
+                  <option value="PE">PERU</option>
+                  <option value="USD">EE.UU</option>
+                  <option value="MXN">MEXICO</option>
+                </select>
+              </div>
+              <button class="btn_convert">convertir</button>
+              <div class="results">
+                <p>Tu resultado es: <span class="rest">0</span></p>
+              </div>
+            </form>
+          </div>
+          <div class="desafios secret">
+            <div class="conts_secret">
+              <h2>Numero Secreto</h2>
+              <p>Adivnina el numero del 1 al 20</p>
+              <p>Intentos: <span class="intent">5</span></p>
+              <input class="entrada" type="text" />
+              <button class="adivinar">Adivinar</button>
+              <button class="reset">Reset</button>
+              <span class="mensaje"></span>
+            </div>
+          </div>
+          <div class="desafios movies">
+            <div class="container_movies">
+              <h2>Peliculas Favoritas</h2>
+              <label for="">ingresa url</label>
+              <input class="agregar_img" placeholder="url......." type="text" />
+              <button class="btn_submit">Agregar</button>
+              <div class="galery">
+              </div>
+            </div>
+          </div>
+          <footer class="progress">
+            <button class="btn_progress back">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="progress_div">
+              <i class="fa-solid fa-circle circle active"></i>
+              <i class="fa-solid fa-circle circle inactive"></i>
+              <i class="fa-solid fa-circle circle inactive"></i>
+            </div>
+            <button class="btn_progress next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </footer>
+        </div>
+      </section>
+      <div class="circle_one"></div>
+      <div class="circle_two"></div>
+    </main>
+  </body>
+</html>
